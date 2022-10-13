@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  max-height: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: rgb(208, 228, 208);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.boxes {
+  padding-left: 2em;
+}
+
+.allDocs {
+  float: left;
+  background:rgb(208, 228, 208);
+  margin: 5em;
+  padding-top: 1.5em;;
+  width:25%;
+  min-height:100px;
+  border: #282c34 solid;
+}
+
+.logout {
+  float: right;
+  margin-bottom: 1em;
+}
+
+.spacer {
+  margin-top: 1em;
+  padding-top: 4em;
+  border-top: #282c34 solid;
+}
+
+.left {
+  background-color: rgb(218, 218, 218);
+  padding-bottom: 2em;
+  padding-top: 0.5em;
+  margin-top: 5em;
+  margin-bottom: 1em;
+  border-top: #282c34 solid;
+}
+
+.commentsection {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.comment {
+  border-collapse: collapse;
+  width: 50%;
+  float: left;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: rgb(218, 218, 218);}
+
+.table tr:hover {background-color: rgb(208, 228, 208);}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #282c34;
+  color: white;
+}
+
+button {
+  background-color: #282c34;
+  border-top: 2px solid gray; 
+  border-left: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-button {
+  display:flex;
+}
+
+input {
+  width: 15%;
+  min-width: 50px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid gray;
+  border-radius: 4px;
+  cursor:text;
+  font-size: 15px;
+}
+
+select {
+  width: 17%;
+  min-width: 50px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid gray;
+  border-radius: 4px;
+  cursor:help;
+  font-size: 15px;
+}
+
+select:hover {
+  background-color: #ededed;
+}
+
+label {
+  font-size: large;
+}
+
+trix-editor {
+  height: 30em !important;
+  max-height: 1000px !important;
+    overflow-y: auto !important;
+}
